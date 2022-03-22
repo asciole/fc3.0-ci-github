@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN go mod init
+#RUN go mod init
 
-RUN go build -o math
+RUN go build math.go
 
 CMD ["./math"]
